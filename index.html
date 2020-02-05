@@ -11,7 +11,13 @@
 </script>
 <SCRIPT LANGUASGE="Javascript">
 var baseurl = "https://facebook.com/imsoyoung.kr";
-window.location.replace(baseurl + window.location.pathname);
+var urlstring = window.location.href;
+var url = new URL(urlstring);
+var c = url.searchParams.get("p");
+if(c != null)
+  window.location.replace(baseurl + c);
+else
+  window.location.replace(baseurl);
 </SCRIPT>
 </HEAD>
 </HTML>
