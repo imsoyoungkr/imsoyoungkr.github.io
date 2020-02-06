@@ -6,18 +6,27 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-157539652-1');
 </script>
 <SCRIPT LANGUASGE="Javascript">
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
 var baseurl = "https://facebook.com/imsoyoung.kr/";
 var urlstring = window.location.href;
-var url = new URL(urlstring);
-var c = url.searchParams.get("p");
+var c = getUrlVars()["p"];
 if(c != null)
   window.location.replace(baseurl + c);
 else
   window.location.replace(baseurl);
 </SCRIPT>
+<meta name="keywords" content="이소영, 변호사, 환경, 기후, 민주당, 인재영입, 국회의원, 총선, 미세먼지, 재생에너지">
 </HEAD>
+<BODY>
+HELLO
+</BODY>
 </HTML>
