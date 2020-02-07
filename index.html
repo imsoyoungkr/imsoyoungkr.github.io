@@ -21,7 +21,7 @@ var urlstring = window.location.href;
 var c = getUrlVars()["p"];
 if(c != null)
 {
-    if (c == "kko")
+    if (c.includes("kko"))
       window.location.replace("https://open.kakao.com/o/gjkTlcWb");
     else
       window.location.replace(baseurl + c);
