@@ -20,7 +20,12 @@ var baseurl = "https://facebook.com/imsoyoung.kr/";
 var urlstring = window.location.href;
 var c = getUrlVars()["p"];
 if(c != null)
-    window.location.replace(baseurl + c);
+{
+    if (c == "kko")
+      window.location.replace("https://open.kakao.com/o/gjkTlcWb");
+    else
+      window.location.replace(baseurl + c);
+}
 else
   window.location.replace(baseurl);
 </SCRIPT>
