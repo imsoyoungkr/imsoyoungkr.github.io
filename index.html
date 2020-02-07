@@ -20,9 +20,16 @@ var baseurl = "https://facebook.com/imsoyoung.kr/";
 var urlstring = window.location.href;
 var c = getUrlVars()["p"];
 if(c != null)
-  window.location.replace(baseurl + c);
+{
+  if (urlstring.includes("imsoyoung.kr/kko"))
+    window.location.replace("https://open.kakao.com/o/gjkTlcWb");
+  else
+    window.location.replace(baseurl + c);
+}
 else
+{
   window.location.replace(baseurl);
+}
 </SCRIPT>
 <meta name="keywords" content="이소영, 변호사, 환경, 기후, 민주당, 인재영입, 국회의원, 총선, 미세먼지, 재생에너지">
 </HEAD>
